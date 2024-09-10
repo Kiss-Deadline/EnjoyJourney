@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 
+class QStandardItemModel;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -10,6 +11,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
+private:
+    void loadData(QStandardItemModel *pModel);
 };
 
 #endif // MAINWINDOW_H
